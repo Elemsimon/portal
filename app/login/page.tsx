@@ -2,7 +2,7 @@ import LoginForm from '@/components/loginForm'
 import Image from 'next/image'
 import React from 'react'
 
-export const Login = () => {
+const page = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-start h-screen overflow-hidden">
       <div className="flex-shrink-0 items-center justify-items-center py-8 sm:py-36 pb-20 gap-16 px-8 sm:px-10 font-[family-name:var(--font-geist-sans)]">
@@ -29,3 +29,5 @@ export const Login = () => {
     </div>
   )
 }
+
+export default page
