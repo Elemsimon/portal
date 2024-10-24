@@ -16,7 +16,7 @@ const page = () => {
             priority
           />
           <LoginForm 
-            title="User Login"
+            title="Staff Login"
           />
         </main>
       </div>
