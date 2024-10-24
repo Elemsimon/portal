@@ -23,7 +23,11 @@ const formSchema = z.object({
   }),
 })
  
-const LoginForm = () => {
+const LoginForm = ({
+    title,
+  }:{
+    title?: string;
+  }) => {
     // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -43,7 +47,7 @@ const LoginForm = () => {
     <div className="w-full">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
-          <h2 className="text-2xl font-bold">User Login</h2>
+          <h2 className="text-2xl font-bold">{title}</h2>
           <FormField
             control={form.control}
             name="username"
