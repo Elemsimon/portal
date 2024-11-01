@@ -60,7 +60,7 @@ const SignupForm = () => {
     <div className="w-full">
       <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <h1 className="text-2xl font-bold">Registration</h1>
+        <h1 className="text-2xl font-bold ">Registration</h1>
         <FormField
           control={form.control}
           name="email"
