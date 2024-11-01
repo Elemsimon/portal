@@ -1,11 +1,10 @@
-import LoginForm from '@/components/loginForm'
 import SignupForm from '@/components/signupForm'
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-start h-screen overflow-hidden ">
+    <div className="flex flex-col sm:flex-row justify-start h-screen overflow-hidden">
       <div className="flex-shrink-0 items-center justify-items-center py-8 sm:py-16 pb-20 gap-16 px-8 sm:px-10 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <Image
